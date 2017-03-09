@@ -1,0 +1,19 @@
+<html>
+<head><marquee direction="right" width="50%"><font color="BLUE" size="8">Code Runner</font></marquee>
+</head>
+<body style="background-color:powderblue;">
+<p style="font-family:courier;"><font color="BLUE" size="6">Insert your javascript code here!!</font> </p>
+<form method="post">
+<textarea name="mycode"  placeholder="Enter your code here" id="coderunner"  cols="50" rows="30"></textarea>
+<br></br>
+<input type="submit" value="Submit now" onclick="return submitbutton()">
+</form>
+<script type="text/javascript">
+ function submitbutton(){
+var string=document.getElementById("coderunner").value;
+eval(string);
+return false;
+}
+</script>
+</body>
+</html>
